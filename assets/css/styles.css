@@ -17,14 +17,18 @@ body {
 }
 
 /* DOG CARD STYLES */
+
+.dog-card {
+    position: relative;
+}
 .dog-image {
     width: 100%;
     border-radius: 0.94rem;
 }
 
 .dog-description {
-    position: relative;
-    bottom: clamp(3.75rem, 1.74rem + 8.57vw, 4.6875rem);
+    position: absolute;
+    bottom: 10px;
     left: 12px;
     line-height: 1.1;
     display: inline-block;
