@@ -1,8 +1,13 @@
+/* GENERAL STYLING */
 body {
     background: hsla(0, 0%, 100%, 1);
     padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    max-width: 33.375rem;
+    margin: 0 auto;
 }
 
+/* HEADER STYLES */
 .header--wrapper {
     display: flex;
     justify-content: space-between;
@@ -10,3 +15,32 @@ body {
     align-items: center;
     margin: 1.2rem 0.5rem;
 }
+
+/* DOG CARD STYLES */
+.dog-image {
+    width: 100%;
+    border-radius: 0.94rem;
+}
+
+.dog-description {
+    position: relative;
+    bottom: clamp(3.75rem, 1.74rem + 8.57vw, 4.6875rem);
+    left: 12px;
+    line-height: 1.1;
+    display: inline-block;
+}
+
+.dog-name {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 0.42rem + 4.57vw, 2rem);
+    color: #F8F8F8;
+    font-weight: 600;
+
+}
+
+.dog-bio {
+    font-size: 1rem;
+    font-size: clamp(1rem, -0.07rem + 4.57vw, 1.5rem);
+    color: #B7B7B7;
+}
+
