@@ -1,10 +1,10 @@
 /* GENERAL STYLING */
 body {
-    background: hsla(0, 0%, 100%, 1);
     padding: 0.5rem;
     font-family: 'Poppins', sans-serif;
     max-width: 33.375rem;
     margin: 0 auto;
+    background: linear-gradient(180deg, #FFF 0%, #F6F7FB 100%);
 }
 
 /* HEADER STYLES */
@@ -47,4 +47,50 @@ body {
     font-size: clamp(1rem, -0.07rem + 4.57vw, 1.5rem);
     color: #B7B7B7;
 }
+
+.card-badge {
+    display: none;
+
+}
+
+.card-badge[data-visible] {
+    display: flex;
+    width: 172px;
+    height: 89px;
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 18px;
+    top: 44px;
+}
+
+/* action buttons */
+.actions {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.action-button {
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    border-radius: 3rem;
+    background-color: #FFF;
+    box-shadow: 0px 10px 20px 0px hsla(228, 1%, 92%, 1);
+}
+
+.reject-button:hover,
+.reject-button:focus {
+    background-color: #FFE7EF;
+    box-shadow: 0px 10px 20px 0px hsla(340, 36%, 89%, 1);
+}
+
+.like-button:hover,
+.like-button:focus {
+    background-color: hsla(161, 100%, 93%, 1);
+    box-shadow: 0px 10px 20px 0px hsla(162, 57%, 87%, 1);
+}
+
 
